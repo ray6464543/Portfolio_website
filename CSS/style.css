@@ -1,0 +1,181 @@
+html body {
+    min-height: 100vh;
+    margin: 0;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 36px 120px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-list {
+    padding: 120px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+footer {
+    padding: 48px 60px;
+    background-color: rgba(0, 0, 0, 0.05);
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: auto;
+}
+
+
+a {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #148A82; 
+}
+
+.logo-group {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+
+}
+
+.logo-image {
+    height: 36px; 
+    width: auto;
+}
+
+.logo-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-title h1 {
+    font-size: 24px;
+    margin: 0;
+    color: black;
+}
+
+.logo-title h2 {
+    font-size: 14px;
+    margin-top: -2px;
+    margin-bottom: 0;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#self-intro {
+    margin:auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    gap: 24px;
+    margin-bottom: 120px;
+}
+
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 36px;
+}
+
+#home-hero {
+    height: 400px;
+    width: auto;
+}
+
+#work-list {
+    display: grid;
+    grid-template: auto auto / auto auto;
+    grid-auto-flow: row;
+    justify-content: center;
+    gap: 36px;
+    
+}
+
+.card-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-project img {
+    width: 600px;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.card-project h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.card-project h4 {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 300;
+    margin-top: 8px;
+}
+
+
+.contact-main {
+    margin: auto;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-main h3 {
+    font-size: 36px;
+}
+
+#contact-button-list {
+    margin-top: 48px;
+    display: flex;
+    gap: 60px;
+    flex: 1;
+    justify-content: center;
+}
+
+.contact-button {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+}
+
+.contact-button .icon-container {
+    height: 48px;
+    width: 48px;
+}
+
+.icon-default {
+    position: absolute;
+}
+
+.icon-hover {
+    position: absolute;
+    opacity: 0;
+}
+
+.icon-hover:hover {
+    opacity: 1;
+}
+
+.button-text {
+    margin-top: 8px;
+}
