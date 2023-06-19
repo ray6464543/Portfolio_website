@@ -35,6 +35,10 @@ footer {
 }
 
 
+h1 {
+    font-size: 36px;
+}
+
 a {
     color: rgba(0, 0, 0, 0.6);
     text-decoration: none;
@@ -42,6 +46,10 @@ a {
 
 a:hover {
     color: #148A82; 
+}
+
+a:hover .icon-hover {
+    opacity: 1;
 }
 
 .logo-group {
@@ -75,11 +83,11 @@ a:hover {
 }
 
 #self-intro {
-    margin:auto; 
+    margin: auto; 
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1000px;
+    max-width: 1200px;
     gap: 24px;
     margin-bottom: 120px;
 }
@@ -102,7 +110,6 @@ header nav ul {
     grid-auto-flow: row;
     justify-content: center;
     gap: 36px;
-    
 }
 
 .card-project {
@@ -122,6 +129,7 @@ header nav ul {
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 0;
+    text-align: center;
 }
 
 .card-project h4 {
@@ -129,6 +137,7 @@ header nav ul {
     color: rgba(0, 0, 0, 0.5);
     font-weight: 300;
     margin-top: 8px;
+    text-align: center;
 }
 
 
@@ -172,10 +181,77 @@ header nav ul {
     opacity: 0;
 }
 
-.icon-hover:hover {
-    opacity: 1;
-}
-
 .button-text {
     margin-top: 8px;
+}
+
+@media only screen and (max-width: 1400px) {
+    #work-list {
+        grid-template: auto auto / auto;
+        gap: 60px;
+    }
+
+    #self-intro {
+        margin-bottom: 80px;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    #self-intro {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    #self-intro img {
+        transform: translate(32px, 0);
+    }
+
+    .self-intro-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 750px;
+    }
+
+    .section-list {
+        padding: 40px;
+        padding-bottom: 80px;
+    }
+
+    header {
+        padding: 36px 60px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .logo-title {
+        display: none;
+    }
+
+    header {
+        padding: 24px 40px; 
+    }
+
+    .card-project img {
+        width: 100%;
+        height: auto;
+    }
+
+    .section-list {
+        padding: 20px;
+        padding-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #self-intro img {
+        width: 100%;
+        height: auto;
+        object-fit: scale-down;
+        max-height: 400px;
+    } 
+
+    .card-project img {
+        height: 360px;
+    }
 }
